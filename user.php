@@ -40,7 +40,7 @@ $email = $r["email"];
 $mobile = $r["mobile"];
 echo "<div> First Name: " . $fname . "<br> Surname: " . $lname . "<br> Mobile: " . $mobile . "<br> Email: " . $email . "</div>";
 }
-echo "<div><a href=\"http://localhost/our\">&laquo; Back to form</a></div>";
+echo '<div><a href="home.php">Home</a></div>';
 echo "</div>";
 echo "</body>";
 echo "</html>";
@@ -49,7 +49,7 @@ else {
 echo "<body>";
 echo "<div class=\"formresults\">";
 echo "<div>Something BAD happened!</div>";
-echo "<div><a href=\"http://localhost/our\">&laquo; Back to form</a></div>";
+echo '<div><a href="home.php">Home</a></div>';
 echo "</div>";
 echo "</body>";
 echo "</html>";

@@ -1,14 +1,12 @@
 <?php
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'braden');
-define('DB_PASSWORD', 'admin123');
-define('DB_NAME', 'customer_management_system');
+session_start();
+$host = "localhost"; /* Host name */
+$user = "braden"; /* User */
+$password = "admin123"; /* Password */
+$dbname = "customer_management_system"; /* Database name */
 
-/* Attempt to connect to MySQL database */
-$con = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
- 
+$con = mysqli_connect($host, $user, $password,$dbname);
 // Check connection
-if($con === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
 }
-?>
