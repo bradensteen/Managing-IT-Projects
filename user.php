@@ -18,7 +18,7 @@ $brand=mysqli_real_escape_string($con, $_POST["password"]);
 $brand=mysqli_real_escape_string($con, $_POST["mobile"]);
 $brand=mysqli_real_escape_string($con, $_POST["email"]);
 
-$i_users = "INSERT INTO customer (first_name,last_name,password,email,mobile) VALUES ('$fname','$lname', '$password','$email', '$mobile')";
+$i_users = "INSERT INTO customer (first_name,last_name,password,email,mobile) VALUES ('$fname','$lname', MD5('$password'),'$email', '$mobile')";
 mysqli_query($con,$i_users);
 $id=mysqli_insert_id($con);
 

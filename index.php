@@ -10,7 +10,7 @@ if(isset($_POST['but_submit'])){
 
     if ($uname != "" && $password != ""){
 
-        $sql_query = "select count(*) as cntUser from user where user_name='".$uname."' and user_password='".$password."'";
+        $sql_query = "select count(*) as cntUser from user where user_name='".$uname."' and user_password='".md5($password)."'";
         $result = mysqli_query($con,$sql_query);
         $row = mysqli_fetch_array($result);
 
@@ -36,7 +36,7 @@ if(isset($_POST['but_submit'])){
         <div class="container">
             <form method="post" action="">
                 <div id="div_login">
-                    <h1>Login</h1>
+                    <h1>Admin Login</h1>
                     <div>
                         <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
                     </div>
@@ -46,6 +46,7 @@ if(isset($_POST['but_submit'])){
                     <div>
                         <input type="submit" value="Submit" name="but_submit" id="but_submit" />
                     </div>
+                    <a href="customerlogin.php">Customer Login</a>
                 </div>
             </form>
         </div>
