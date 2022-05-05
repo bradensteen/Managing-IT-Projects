@@ -1,0 +1,40 @@
+<?php
+
+// Connecting to the Database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "riskinvestment";
+
+// Create a connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Die if connection was not successful
+if (!$conn){
+    die("Sorry we failed to connect: ". mysqli_connect_error());
+}
+else{
+    echo "Connection was successful<br>";
+}
+
+// Variables to be inserted into the table
+$amount = "2000";
+$type = "crypto";
+$rlevel = "High";
+$uid = " 12";
+$fname = "Crish";
+$lname = " Wagh";
+$email = "Crish178@gmail.com";
+$mobile = "0378719289";
+
+// Sql query to be executed
+$sql = "INSERT INTO `riskinvestment`(`Amount of Investment`, `Type of Investment`, `Level of Risk`, `UserID`, `First Name`, `Last Name`, `Email`, `Mobile`) VALUES ('$amount','$type','$rlevel','$uid','$fname','$lname','$email','$mobile')";
+$result = mysqli_query($conn, $sql);
+
+
+if($result){
+    echo "The record has been inserted successfully successfully!<br>";
+}
+else{
+    echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
+}
+?>
