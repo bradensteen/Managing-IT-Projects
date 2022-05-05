@@ -25,6 +25,7 @@ if(isset($_POST['but_logout'])){
             <div class="topnav">
                 <a class="active" href="home.php">Home</a>
                 <a href="addcustomer.php">Add customer</a>
+                <a href="updatecustomer.php">Update customer</a>
             </div> 
             <br>
             <form method='post' action="">

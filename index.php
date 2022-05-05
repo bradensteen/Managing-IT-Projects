@@ -10,7 +10,7 @@ if(isset($_POST['but_submit'])){
 
     if ($uname != "" && $password != ""){
 
-        $sql_query = "select count(*) as cntUser from user where user_name='".$uname."' and user_password='".md5($password)."'";
+        $sql_query = "select count(*) as cntUser from user where user_name='".$uname."' and user_password='".$password."'";
         $result = mysqli_query($con,$sql_query);
         $row = mysqli_fetch_array($result);
 

@@ -22,6 +22,7 @@ if(!isset($_SESSION['uname'])){
         <div class="topnav">
         <a href="home.php">Home</a>
         <a class="active" href="addcustomer.php">Add customer</a>
+        <a href="updatecustomer.php">Update customer</a>
         </div> 
         
   <form method="post" action="user.php">
