@@ -20,7 +20,7 @@ if(!isset($_SESSION['uname'])){
     <div id="div_home">
     <h1>Add a Customer</h1>
         <div class="topnav">
-        <a class="active" href="home.php">Home</a>
+        <a class="active" href="custhome.php">Home</a>
         <a href="customerinvestments.php">View Investments</a>
         </div> 
     <p>Coming Soon</p>    
