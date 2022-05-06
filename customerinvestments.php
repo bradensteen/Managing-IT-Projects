@@ -18,7 +18,7 @@ if(!isset($_SESSION['uname'])){
     <body>
     <div class="login_container">
     <div id="div_home">
-    <h1>Add a Customer</h1>
+    <h1>Investments</h1>
         <div class="topnav">
         <a class="active" href="custhome.php">Home</a>
         <a href="customerinvestments.php">View Investments</a>

@@ -32,6 +32,13 @@
     padding: 5px;
 }
 
+#div_home input[type=submit]{
+  padding: 8px;
+  width: 150px;
+  background-color: rgb(178, 32, 32);
+  border: 0px;
+  color: white;
+}
 
 /* Login */
 #div_login{

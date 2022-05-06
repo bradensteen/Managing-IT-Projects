@@ -12,13 +12,13 @@ if(!isset($_SESSION['uname'])){
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Add a Customer</title>
+    <title>Update Customer</title>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <div class="login_container">
     <div id="div_home">
-    <h1>Add a Customer</h1>
+    <h1>Update Customer</h1>
         <div class="topnav">
         <a href="home.php">Home</a>
         <a href="addcustomer.php">Add customer</a>
